@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-family);
+}
+
+:root{
+    --green: #659833;
+    --brown: #564137;
+    --blue: #477596;
+    --white: #efefef;
+    --main-font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+}
+
+/*  MEDIA FOR FONT SIZE */
+/* TABLET SCREEN */
+@media (min-width: 426px){
+    header{
+        font-size: 24px;
+    }
+    .orderButton{
+        /* bottom: 3.4vw; */
+        padding: 1.8% 3.7%;
+    }
+}
+
+/* LAPTOP SCREEN */
+@media (min-width: 769px) {
+    header{
+        font-size: 30px;
+    }
+}
+
+/* MEDIA LAPTOP SCREEN */
+@media (min-width: 769px){
+    .orderButton{
+        /* bottom: 2.4vw;
+        right: 45vw; */
+        padding: 1% 2%;
+    }
+    .nav-content{
+        width: auto;
+    }
+
+    .navContentButton{
+        display: none;
+    }
+
+    .main-nav > ul{
+        display: flex;
+        /* position: absolute; */
+        /* top: 1.8vw;
+        right: 1vw; */
+    }
+    .main-nav li{
+        padding: 25px;
+
+    }
+
+    /* FOR BIG LAPTOP SCREEN */
+    @media (min-width: 1025px) {
+
+
+        .orderButton{
+            /* bottom: 1.5vw;
+            right: 33vw; */
+            padding: 1% 2%;
+        }
+    }
+
+    /* DROP DOW CONTAINER */
+
+    .dropdown-container{
+        position: absolute;
+        width: 130px;
+        font-size: .6em;
+        background-color: var(--white);
+        /* text-align: right; */
+    }
+
+    .dropdown-container ul{
+        margin-top: 5px;
+        border: 1px solid var(--brown);
+        border-radius: 10px;
+        box-shadow: .2px .4px 2px black;
+    }
+
+    /* .dropdown-container ul{
+        border-top: none;
+    } */
+
+    .dropdown-container li{
+        text-align: center;
+        padding: 15px 5px;
+    }
+
+    .dropdown-container li:hover{
+        opacity: .6;
+    }
+
+
+
+
+    /* REMOVING BORDERS */
+    .main-nav li:first-child{
+        border: none;
+    }
+
+    .main-nav li{
+        border: none;
+    }
+
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+/* The font size of the nav inside the header is 16.
+It is the default font size */

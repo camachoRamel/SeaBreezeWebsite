@@ -1,0 +1,23 @@
+DEFUALT SCREEN SIZE;
+    MOBILE L- 425PX
+--------------------------
+
+
+
+
+max width property defines the maximum width of an element.
+If the content is LARGER than the maximum width, it will automatically
+    change the height of the element. If the content is smaller than
+    the maximum width the max width property has no effect
+
+
+
+!IMPORTANT !!REMEMBER
+buttons use camel casing
+div and such use hypens to seperate words
+IDK why but that's what I did
+
+
+
+In order to overide some styles you must use specific selectors like
+">" meaning direct child
