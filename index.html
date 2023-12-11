@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="Fonts/Glacial_indifference/stylesheet.css">
+    <link rel="stylesheet" href="Fonts/Montserrat/stylesheet.css">
 <!-- PERSONAL CSS STYLE SHEETS -->
     <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/home.css">
     <link rel="stylesheet" href="Styles/main.css">
 
@@ -17,44 +16,147 @@
 </head>
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="index.html"><img src="Images/logo.png" alt="Sea Breeze logo"></a>
-            <a class="orderButton" href="#">Order</a>
-            <!-- <span class="fa-solid fa-bars navContentButton"></span> -->
-            <span class="navContentButton">
-                <div></div>
-                <div></div>
-                <div></div>
-            </span>
-
-            <ul class="nav-content hide">
-                <li><a class="menuButton" href="#">Menu</a></li>
-                <li><a class="servicesButton" href="#">Services<span class="fa-solid fa-caret-down servicesButton"></span></a>
-                <div class="dropdown-container hide">
-                    <ul>
-                        <li><a href="#">Catering</a></li>
-                        <li><a href="#">Reservation</a></li>
-                    </ul>
-                </div></li>
-                <li><a class="aboutButton" href="#">About</a></li>
-            </ul>
+        <div class="main-container">
+        <div class="img-container"><a href="index.html"><img src="Images/logo.png"></a></div>
+        <nav class="nav-links-container">
+            <button class="order-button"><a href="Pages/menu.html">Order</a></button>
+            <button class="burger-button"></button>
+            <div class="desktop-display hide">
+                <ul class="desktop-nav">
+                    <li><a href="Pages/menu.html">Menu</a></li>
+                    <li class="desktop-services-button"><a href="#">Services <span class="upside-down-carret">&#x02C5;</span></a>
+                    <div class="desktop-services-display">
+                            <a href="Pages/reservation.html">Reservation</a>
+                            <a href="Pages/catering.html">Catering</a>
+                    </div>
+                </li>
+                    <li><a href="Pages/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-</header>
+    </header>
 
-    <!-- <main>
+    <div class="mobile-display hide">
+        <ul class="mobile-nav">
+            <li><a href="Pages/menu.html">Menu</a></li>
+            <li class="mobile-services-button"><a href="#">Services <span class="upside-down-carret">&#x02C5;</span></a></li>
+            <div class="mobile-services-display hide">
+                <ul class="mobile-services-nav">
+                    <li><a href="Pages/reservation.html">Reservation</a></li>
+                    <li><a href="Pages/catering.html">Catering</a></li>
+                </ul>
+            </div>
+            <li><a href="Pages/about.html">About</a></li>
+        </ul>
+    </div>
+
+
+<!-- MAIN CONTENTS OF HOME PAGE -->
+
+    <!-- LANDING SECTION -->
+    <main>
         <section class="landing-page">
             <img src="Images/landing-page-image.jpg">
+            <div class="landing-page-contents">
             <div class="landing-page-text">
-                <h2>Welcome to Sea Breeze!</h2>
-                <p>#SignitureSeaBreeze</p>
+                <h1>Welcome to Sea Breeze!</h1>
+                <p>"Experience coastal elegance at its finest – Sea Breeze, where every purchase is a seaside escape."</p>
             </div>
-            <a href="#">Order</a>
-            
-
-
+            <button class="landing-page-button"><a href="Pages/menu.html">Order</a></button>
+        </div>
         </section>
+        
+        <!-- BEST SELLER SECTION -->
+        <section class="best-seller-section">
+            <div class="header-container">
+                <h2>Best Sellers</h2>
+            </div>
+
+            <div class="main-best-seller-container">
+                <div class="inner-best-seller-container">
+                    <div class="best-seller-img-container"><img src="Images/Products/Sizzling/sizzling-pork-sisig-wo-egg.png" alt="Sizzling Pork Sisig Photo"></div>
+                    <div class="best-seller-text">
+                        <p>Pork Sisig</p>
+                        <p>Sizzling to the touch, slow-cooked to perfection! Smokey exterior and delectably juicy on the inside. This Sizzling Chicken will make you want to come back for more</p>
+                    </div>
+                </div>
+                <div class="inner-best-seller-container">
+                    <div class="best-seller-img-container"><img src="Images/Products/Sizzling/sizzling-chicken.png" alt="Sizzling Chicken Photo"></div>
+                    
+                    <div class="best-seller-text">
+                        <p>Sizzling Chicken</p>
+                        <p>Sizzling to the touch, slow-cooked to perfection! Smokey exterior and delectably juicy on the inside. This Sizzling Chicken will make you want to come back for more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-inner-best-seller-container">
+                <div class="inner-best-seller-container">
+                    <div class="best-seller-img-container"><img src="Images/Products/Meats/Pork/lechon-kawali.png" alt="Lechon Kawali Photo"></div>
+                    
+                    <div class="best-seller-text">
+                        <p>Lechon Kawali</p>
+                        <p>Salty and extra-crispy, while the interios is tender and moist with fat and juicy meat.</p>
+                    </div>
+                </div>
+                <div class="inner-best-seller-container">
+                    <div class="best-seller-img-container"><img src="Images/Products/Meats/Pork/baby-back-ribs.png" alt="Baby Back Ribs Photo"></div>
+                    
+                    <div class="best-seller-text">
+                        <p>Baby Back Ribs</p>
+                        <p>Delicious. The best meat you will ever eat coooked tender enough that slide off the bone!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="best-seller-button-container">
+                <button><a href="Pages/menu.html">View Full Menu</a></button>
+            </section>
+            </div>
+
+
+            <section class="promos-section">
+                <div class="main-promos-container">
+                    
+                </div>
+            </section>
+
+
+
+
+
     </main>
-     -->
+    
+
+     <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>About Sea Breeze</h2>
+            <p>Discover the tranquility of Sea Breeze, where delightful cuisine meets a serene atmosphere.</p>
+          </div>
+          <div class="contact-and-location-detials">
+                <h2>Contact Us</h2>
+                <p>Phone: 0918-615-7044, 0949-637-8126</p>
+                <div class="location-details">
+                    <h2>Find Us At</h2>
+                    <address>Imelda Blvd., Salvacion, Virac, Catanduanes</address>
+                </div>
+          </div>
+          <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <ul class="social-details">
+              <li><a href="https://web.facebook.com/seabreeze.vrc" target="_blank">Facebook</a></li>
+              <li><a href="https://www.twitter.com/YourSeaBreeze" target="_blank">Instagram</a></li>
+              
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Sea Breeze. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 <script src="Scripts/header.js"></script>
+<script src="Scripts/homepage_display.js"></script>
 </html>

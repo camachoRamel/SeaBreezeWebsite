@@ -1,0 +1,352 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--white);
+}
+form{
+    background-color: white;
+    width: 40%;
+    margin: 5vw;
+    /* border: 1px solid black; */
+    border-radius: 1.3rem;
+    padding: 1%;
+    box-shadow: .1rem .3rem 1rem rgba(0, 0, 0, .5);
+}
+
+form h2{
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+
+.payment-method{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-method-title{
+    align-self: center;
+}
+
+.payment-method-inner-container{
+    font-size: 1.8rem;
+    width: 73%;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    gap: 1vw;
+    border-radius: 3px;
+    
+}
+
+.payment-method div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    padding: 1.4vw;
+    border-radius: .6rem;
+}
+
+
+.payment-method a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.payment-method .first-method{
+    color: white;
+    background-color: #0178f6;
+}
+
+.payment-method .second-method{
+    color: #1e38d6;
+    background-color: whitesmoke;
+}
+
+
+/* INFORMATION */
+
+.information-container{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    padding: 1vw;
+}
+
+.information-container a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font-family-bold);
+}
+
+.information-container input{
+    height: 1.9vw;
+    font-size: .8rem;
+}
+
+.date-and-time-container{
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    margin-bottom: 1vw;
+}
+
+.date-and-time-container input{
+    width: 7.7vw;
+}
+
+.date-container label,
+.time-container label{
+    display: block;
+}
+
+.number-of-guest-container{
+    margin-bottom: 1vw;
+}
+
+.number-of-guest-container input{
+    width: 100%;
+}
+
+.personal-info{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1vw;
+}
+
+.personal-info input{
+    width: 100%;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 1vw;
+    align-items: flex-end;
+}
+
+.contact-info .email-container{
+    min-width: 15vw;
+}
+
+.contact-info .cp-number-container{
+    flex: 1;
+}
+
+.contact-info input{
+    width: 100%;
+}
+
+.message-box-container label{
+    display: block;
+    width: 100%;
+}
+
+.message-box-container textarea{
+    font-size: .8rem;
+    width: 100%;
+    min-width: 90%;
+    max-width: 100%;
+    height: 8vw;
+    max-height: 12vw;
+    margin-bottom: 1vw;
+}
+
+.submit-btn-container{
+    text-align: right;
+}
+
+.submit-btn-container button{
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+    background-color: var(--blue);
+    border: none;
+    border-radius: .5rem;
+    font-family: var(--main-font-family-bold);
+    box-shadow: .11rem .11rem .31rem black;
+}
+
+.submit-btn-container button:hover{
+    box-shadow: .31rem .31rem .77rem black;
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+/* CATERING PAGES EXCLUSIVE */
+.catering-package-selction-container select{
+    height: 1.9vw;
+    font-size: .8rem;
+}
+
+.location-container{
+    margin-bottom: 1vw;
+}
+
+.location-container input{
+    width: 100%;
+}
+
+.catering-package-selction-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    gap: 5rem;
+}
+
+.catering-package-selction-container label{
+    display: block;
+}
+
+.catering-package-selction-container select{
+    width: 100%;
+    font-size: .8em;
+}
+
+.catering-package-selction-container .service-type-container{
+    flex: 1;
+}
+
+.view-packages-btn{
+    width: 7rem;
+    padding: .5rem 0;
+    margin-bottom: 1.5vw;
+    background-color: var(--blue);
+    border: none;
+    border-radius: .3rem;
+    font-size: .9rem;
+    font-family: var(--main-font-family-bold);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, .7);
+}
+
+.view-packages-btn:hover{
+    box-shadow: .2rem .2rem .7rem black;
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+
+/* PICTURE MODAL */
+
+.picture-modal a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font-family-bold);
+}
+
+.picture-modal{
+    /* display: none; */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, .5);
+    /* z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.picture-modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 1.2rem;
+    border: none;
+    width: 40%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.picture-modal img{
+    width: 100%;
+    max-height: 97vh;
+}
+
+.choice-modal-btn-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--white);
+    padding: 1.2rem;
+    border: none;
+    width: 20vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice-modal-btn-container h3{
+    margin-bottom: 1vw;
+}
+
+.choice-modal-btn-container button{
+    /* padding: .6rem .2rem;
+    font-size: 1.2rem;
+    font-family: var(--main-font-family-bold); */
+    width: 15vw;
+    padding: .5rem 0;
+    margin-bottom: 1.5vw;
+    background-color: var(--blue);
+    border: none;
+    border-radius: .3rem;
+    font-size: .9rem;
+    font-family: var(--main-font-family-bold);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, .7);
+}
+
+.choice-modal-btn-container button:hover{
+    box-shadow: .2rem .2rem .7rem black;
+    opacity: .9;
+    cursor: pointer;
+}
+
+/* MEDIA QUERRIES */
+/* @media (max-width: 320px){
+    .information-container input{
+        height: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+
+    main{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px){
+    html{
+        font-size: 20px;
+    }
+
+    main{
+        font-size: 19px;
+    }
+} */

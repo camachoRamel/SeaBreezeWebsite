@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../Fonts/Glacial_indifference/stylesheet.css">
+    <link rel="stylesheet" href="../Fonts/Montserrat/stylesheet.css">
+<!-- PERSONAL CSS STYLE SHEETS -->
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/reser_and_cater_form.css">
+    <link rel="stylesheet" href="../Styles/main.css">
+
+    <title>Sea Breeze 2001</title>
+</head>
+<body>
+    <header>
+        <div class="main-container">
+        <div class="img-container"><a href="../index.html"><img src="../Images/logo.png"></a></div>
+        <nav class="nav-links-container">
+            <button class="order-button"><a href="#">Order</a></button>
+            <button class="burger-button"></button>
+            <div class="desktop-display hide">
+                <ul class="desktop-nav">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="desktop-services-button"><a href="#">Services <span class="upside-down-carret">&#x02C5;</span></a>
+                    <div class="desktop-services-display">
+                            <a href="reservation.html">Reservation</a>
+                            <a href="catering.html">Catering</a>
+                    </div>
+                </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <div class="mobile-display hide">
+        <ul class="mobile-nav">
+            <li><a href="menu.html">Menu</a></li>
+            <li class="mobile-services-button"><a href="#">Services <span class="upside-down-carret">&#x02C5;</span></a></li>
+            <div class="mobile-services-display hide">
+                <ul class="mobile-services-nav">
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                </ul>
+            </div>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+<main>
+    <form>
+        <div class="payment-method">
+            <div class="payment-method-title"><h3>Payment Method</h3></div>
+            <div class="payment-method-inner-container">
+            <a href="#">
+            <div class="first-method">Gcash</div></a>
+            <a href="#">
+            <div class="second-method">VISA</div></a>
+            <a href="#">
+            <div class="third-method">Paypal</div></a>
+        </div>
+        </div>
+
+        <div class="information-container">
+            <div class="date-and-time-container">
+                <div class="date-container">
+                    <label for="date">Date:</label>
+                    <input id="date" name="date" type="date">
+                </div>
+                <div class="time-container">
+                    <label for="time">Time:</label>
+                    <input id="time" name="time" type="time">
+                </div>
+            </div>
+
+            <div class="number-of-guest-container">
+                <label for="number-of-guest">Number of Guest:</label>
+                <input id="number-of-guest" name="number-of-guest" type="number" min="1">
+            </div>
+            <div class="personal-info">
+                <div class="first-name-contanier">
+                    <label for="first-name">First Name:</label>
+                    <input id="first-name" name="first-name" type="text" autocomplete="given-name">
+                </div>
+                <div class="last-name-container">
+                    <label for="last-name">Last Name:</label>
+                    <input id="last-name" name="last-name" type="text" autocomplete="family-name">
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="email-container">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" autocomplete="off">
+                </div>
+                <div class="cp-number-container">
+                    <label for="cp-number">Phone:</label>
+                    <input id="cp-number" name="cp-number" type="tel">
+                </div>
+            </div>
+
+            <div class="message-box-container">
+                <label for="message-box">Message(Optional)</label>
+                <textarea id="message-box" name="message-box" placeholder="Type here...." rows="4" cols="20"></textarea>
+            </div>
+
+            <div class="submit-btn-container">
+                <button type="submit">Proceed</button>
+            </div>
+
+        </div>
+
+    </form>
+</main>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About Sea Breeze</h2>
+        <p>Discover the tranquility of Sea Breeze, where delightful cuisine meets a serene atmosphere.</p>
+      </div>
+      <div class="contact-and-location-detials">
+            <h2>Contact Us</h2>
+            <p>Phone: 0918-615-7044, 0949-637-8126</p>
+            <div class="location-details">
+                <h2>Find Us At</h2>
+                <address>Imelda Blvd., Salvacion, Virac, Catanduanes</address>
+            </div>
+      </div>
+      <div class="footer-section social">
+        <h2>Follow Us</h2>
+        <ul class="social-details">
+          <li><a href="https://web.facebook.com/seabreeze.vrc" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com/YourSeaBreeze" target="_blank">Instagram</a></li>
+          
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Sea Breeze. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+<script src="../Scripts/header.js"></script>
+</html>

@@ -1,0 +1,54 @@
+footer {
+    border-top: 2px solid grey;
+    background-color: var(--white);
+    color: black;
+    padding: 3% 0;
+}
+
+.footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer h2 {
+    margin-bottom: .8rem;
+    color: #333;
+}
+
+.social-details {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.social-details li {
+    margin-bottom: 3%;
+}
+
+.location-details{
+    margin: .8rem 0;
+}
+
+footer a{
+    color: #1e90ff; /* Dodger Blue */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: var(--green);
+    padding: 10px 0;
+    text-align: center;
+}
